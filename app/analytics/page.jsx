@@ -100,9 +100,8 @@ export default function AnalyticsPage() {
         averageRating: Number((dept.totalRating / dept.count).toFixed(1)),
         employees: dept.employees,
       }))
-      .filter((dept) => dept.count > 0) // Only include departments with employees
-      .sort((a, b) => a.department.localeCompare(b.department)) // Sort alphabetically for consistent display
-
+      .filter((dept) => dept.count > 0) 
+      .sort((a, b) => a.department.localeCompare(b.department))
     const ratingCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 }
     employees.forEach((emp) => {
       const rating = Math.floor(emp.rating || 0)
@@ -121,7 +120,6 @@ export default function AnalyticsPage() {
       .filter((item) => item.value > 0)
 
     const salaryData = departmentAnalytics.map((dept) => {
-      // Calculate actual average salary from employee data
       const deptEmployees = dept.employees;
       const totalSalary = deptEmployees.reduce((sum, emp) => sum + (emp.salary || 0), 0);
       const avgSalary = deptEmployees.length > 0 ? Math.round(totalSalary / deptEmployees.length) : 0;
@@ -159,7 +157,6 @@ export default function AnalyticsPage() {
     const highPerformers = employees.filter((emp) => (emp.rating || 0) >= 4.5).length
     const totalBookmarks = bookmarks.length
 
-    // Debug logging
     console.log('Department Analytics:', departmentAnalytics);
     console.log('Rating Distribution:', ratingDistribution);
     console.log('Salary Data:', salaryData);
