@@ -103,30 +103,21 @@ The application includes mock employee data for demonstration purposes, featurin
 ## 📱 Screenshots
 
 ### Dashboard Overview
-![Dashboard](screenshots/dashboard.png)
+<img width="1327" alt="Screenshot 2025-06-27 at 1 39 37 PM" src="https://github.com/user-attachments/assets/2811c04c-8bd9-487c-a1eb-d341c289bc5d" />
+
 *Main dashboard with employee metrics and search functionality*
 
 ### Employee Profile
-![Employee Profile](screenshots/employee-profile.png)
+<img width="1254" alt="Screenshot 2025-06-27 at 1 46 13 PM" src="https://github.com/user-attachments/assets/eed18db6-e7f5-4268-a65f-c4f1d82d74a4" />
+
 *Detailed employee profile with promotion and bookmark features*
 
 ### Analytics Dashboard
-![Analytics](screenshots/analytics.png)
+<img width="1333" alt="Screenshot 2025-06-27 at 1 39 51 PM" src="https://github.com/user-attachments/assets/ce5fc31f-073c-41dc-96b7-4b820af9b1da" />
+
 *Comprehensive analytics with charts and performance insights*
 
-### Mobile Responsive
-![Mobile View](screenshots/mobile.png)
-*Fully responsive design optimized for mobile devices*
 
-## 🔧 Available Scripts
-
-```bash
-# Development
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run start        # Start production server
-
-```
 
 ## 🎯 Key Features Implemented
 
@@ -147,4 +138,3 @@ npm run start        # Start production server
 - [x] Form validation and error handling
 - [x] Loading states and error boundaries
 - [x] Accessibility features
-- [x] Mobile-first responsive design
