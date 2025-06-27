@@ -128,7 +128,6 @@ export const EmployeeDetails = () => {
           </Button>
         </Link>
 
-        {/* Employee Header */}
         <Card className="bg-white border-gray-200 mb-8">
           <CardContent className="p-8">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
@@ -213,7 +212,6 @@ export const EmployeeDetails = () => {
           </CardContent>
         </Card>
 
-        {/* Tabbed Content */}
         <Tabs defaultValue="overview" className="space-y-6">
           <TabsList className="bg-white p-1 rounded-lg border border-gray-200">
             <TabsTrigger value="overview" className="data-[state=active]:bg-purple-600 data-[state=active]:text-white">

@@ -41,8 +41,8 @@ export const HeaderNav = () => {
 
           <div className="flex items-center space-x-8">
               <Link href="/" className="flex items-center space-x-2">
-                <div className="p-2 bg-purple-600 rounded-lg">
-                  <Users className="h-6 w-6 text-white" />
+                 <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <Users className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-xl font-bold text-gray-900">HR Dashboard</span>
               </Link>
@@ -57,7 +57,7 @@ export const HeaderNav = () => {
                       <Button
                         variant={isActive ? "default" : "ghost"}
                         className={`flex items-center space-x-2 ${isActive
-                            ? "bg-purple-600 text-white hover:bg-purple-700"
+                            ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
                             : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                           }`}
                       >
@@ -71,7 +71,7 @@ export const HeaderNav = () => {
             </div>
 
             <div className="flex items-center space-x-4">
-              <Button onClick={() => setIsCreateModalOpen(true)} className="bg-purple-600 hover:bg-purple-700 text-white">
+              <Button onClick={() => setIsCreateModalOpen(true)} className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white">
                 <Plus className="w-4 h-4 mr-2" />
                 Create Employee
               </Button>
