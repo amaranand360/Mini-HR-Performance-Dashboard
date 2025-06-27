@@ -56,7 +56,7 @@ A comprehensive HR Performance Dashboard built with Next.js, featuring employee 
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd hr-dashboard-management
+cd Mini-HR-Performance-Dashboard
 ```
 
 ### 2. Install Dependencies
