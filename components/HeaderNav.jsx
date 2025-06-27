@@ -16,7 +16,7 @@ import { Users, BarChart3, Bookmark, Plus, LogOut, User } from "lucide-react"
 import { useAuth } from "@/contexts/AuthContext"
 import CreateUserModal from "./CreateUserModal"
 
-const HeaderNav = () => {
+export const HeaderNav = () => {
   const { user, logout } = useAuth()
   const router = useRouter()
   const pathname = usePathname()
@@ -38,8 +38,8 @@ const HeaderNav = () => {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo and Navigation */}
-            <div className="flex items-center space-x-8">
+
+          <div className="flex items-center space-x-8">
               <Link href="/" className="flex items-center space-x-2">
                 <div className="p-2 bg-purple-600 rounded-lg">
                   <Users className="h-6 w-6 text-white" />
@@ -70,7 +70,6 @@ const HeaderNav = () => {
               </nav>
             </div>
 
-            {/* Right side - Create User Button and User Menu */}
             <div className="flex items-center space-x-4">
               <Button onClick={() => setIsCreateModalOpen(true)} className="bg-purple-600 hover:bg-purple-700 text-white">
                 <Plus className="w-4 h-4 mr-2" />
@@ -109,7 +108,6 @@ const HeaderNav = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
           <div className="md:hidden pb-4">
             <nav className="flex space-x-1">
               {navItems.map((item) => {

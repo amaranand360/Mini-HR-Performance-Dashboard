@@ -21,7 +21,7 @@ const departments = [
 
 const ratings = ["All Ratings", "5 Stars", "4+ Stars", "3+ Stars", "2+ Stars", "1+ Stars"]
 
-const SearchAndFilter = () => {
+export const SearchAndFilter = () => {
   const {
     searchTerm,
     selectedDepartments,

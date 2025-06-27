@@ -13,6 +13,7 @@ const navigation = [
 ]
 
 const Navbar = () => {
+  
   const pathname = usePathname()
 
   return (

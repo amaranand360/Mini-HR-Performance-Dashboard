@@ -39,9 +39,20 @@ function appReducer(state, action) {
     case "SET_SELECTED_RATINGS":
       return { ...state, selectedRatings: action.payload }
     case "PROMOTE_EMPLOYEE":
-      const updatedEmployees = state.employees.map((emp) =>
-        emp.id === action.payload ? { ...emp, rating: Math.min(5, emp.rating + 0.5) } : emp,
-      )
+      const updatedEmployees = state.employees.map((emp) => {
+        if (emp.id === action.payload) {
+          // Calculate salary increase (10-15% raise)
+          const raisePercentage = Math.random() * 0.05 + 0.10; // 10% to 15%
+          const newSalary = Math.round(emp.salary * (1 + raisePercentage));
+
+          return {
+            ...emp,
+            rating: Math.min(5, emp.rating + 0.5),
+            salary: newSalary
+          };
+        }
+        return emp;
+      })
       return { ...state, employees: updatedEmployees }
     case "ADD_EMPLOYEE":
       const updatedEmployeesList = [...state.employees, action.payload]
